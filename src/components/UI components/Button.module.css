@@ -1,0 +1,14 @@
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: lightpink;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  filter: brightness(110%);
+}
+
+.btn:active {
+  filter: saturate(4);
+}
