@@ -6,7 +6,10 @@ const AnimalCard = (props) => {
     <div className={classes.card}>
       <img src={props.src} alt={props.name}></img>
       <div className={classes.title}>{props.name}</div>
-      <div className={classes.like}>{props.likes} ❤️</div>
+      <div className={classes.like}>
+        {props.likes}
+        <span className={classes.heart}> ❤️</span>
+      </div>
       <Button add={props.add}>Add like</Button>
     </div>
   );

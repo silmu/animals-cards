@@ -7,6 +7,7 @@
 
 .btn:hover {
   filter: brightness(110%);
+  cursor: pointer;
 }
 
 .btn:active {
