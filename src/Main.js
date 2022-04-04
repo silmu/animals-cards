@@ -18,6 +18,16 @@ class Main extends Component {
     this.setState({ animals: arr });
   };
 
+  closeHandler = (animalName) => {
+    let arr = this.state.animals.filter((animal) => {
+      if (animal.name !== animalName) {
+        return animal;
+      }
+    });
+    //Updare array state with selected animal removed
+    this.setState({ animals: arr });
+  };
+
   render() {
     const animalsList = this.state.animals.map((animal) => {
       return (
@@ -28,12 +38,14 @@ class Main extends Component {
           src={`https://source.unsplash.com/1600x900/?${animal.name}`}
           //add passes function to AnimalCard, AnimalCard then passes it to Button
           add={() => this.addLikeHandler(animal.name)}
+          close={() => this.closeHandler(animal.name)}
         />
       );
     });
 
     return (
       <main>
+        <h1>Animal Cards App</h1>
         <div className={classes.cards}>{animalsList}</div>
       </main>
     );

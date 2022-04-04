@@ -1,0 +1,17 @@
+.closeBtnContainer {
+  text-align: right;
+  width: 90%;
+}
+
+.closeBtn {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  background-color: transparent;
+  border: none;
+  text-align: right;
+}
+
+.closeBtn:hover {
+  color: red;
+}
