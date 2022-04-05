@@ -1,0 +1,16 @@
+.searchContainer {
+  padding: 0 0.5rem;
+}
+
+.search {
+  border: 1px solid pink;
+  border-radius: 5px;
+  padding: 0.5rem;
+  min-width: 100px;
+}
+
+.search:focus {
+  outline: 2px solid red;
+  min-width: 250px;
+  transition: all 0.5s;
+}
